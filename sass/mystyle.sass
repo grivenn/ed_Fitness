@@ -1,0 +1,283 @@
+@import 'fonts'
+
+* 
+    box-sizing: border-box;
+
+
+// a
+//     text-decoration: none;
+
+
+ul,
+li
+    list-style: none;
+    margin: 0;
+    padding: 0;
+img
+    max-width: 100%
+a
+    &:link,
+    &:visited 
+        color: #fff
+        text-decoration: none    
+
+
+.btn
+    font-size: 18px
+    line-height: 70px
+    background: #0eb595
+    padding: 0 60px   
+    display: inline-block
+    border-radius: 35px 
+    text-align: center
+    color: #fff !important
+    text-transform: uppercase
+    cursor: pointer
+
+body
+    margin: 0
+    font-size: 20px
+    font-family: 'Avenir Next Cyr Regular'
+.header
+    background: #12202f
+    color: #fff
+    padding-top: 10px
+    background-image: url(../img/backgound-header.jpg)
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: center;
+    min-height: 1080px
+    // position: absolute
+.container
+    max-width: 1170px
+    margin: 0 auto
+    padding: 15px
+.header__top    
+    height: 40px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.item-
+    &name
+        float: left
+        font-size: 26px
+        line-height: 40px
+        align-items: center
+        padding-right: 40px
+        margin-right: 40px
+        border-right: 1px solid rgba(#fff, 0.2)    
+        // position: relative
+
+    &comment
+        float: left
+        font-size: 16px
+        // position: relative
+
+
+    // &tel
+        // float: right
+        // position: relative
+.header__top-right
+    display: flex
+    justify-content: space-around
+    align-items: center
+    // color: #fff
+
+    .item-tel
+        margin-right: 23px
+        // color: #fff
+
+.item-icons
+    // padding-left: 40px
+    // display: flex
+    // justify-content: space-between
+    // align-items: center
+    // list-style: none
+    // float: right
+    // display: flex
+    ul
+        // height: 40px
+    li
+        float: left
+        margin-left: 10px
+    a
+        // top: 0
+        // max-width: 25px
+.icon
+    color: #fff
+    font-family: 'fontello'
+    // font-size: 25px
+    line-height: 30px
+.header__title
+    font-family: 'bebas'
+    font-size: 106px
+    line-height: 110px
+    letter-spacing: 7.5px
+    margin-top: 220px
+    &-comment
+        font-size: 27px
+        line-height: 19px
+        margin-top: 40px
+.header__btn
+    // font-size: 18px
+    // line-height: 70px
+    // background: #0eb595
+    // width: 320px
+    // height: 75px
+    // border-radius: 35px 
+    margin-top: 80px
+    // text-align: center
+    // color: #fff
+    // text-transform: uppercase
+    // cursor: pointer
+.header__gantel
+        background-image: url(../img/dumbells.png)
+        position: absolute
+        top: 850px
+        left: 0
+        // margin-top: 850px
+        background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        min-height: 677px
+        width: 390px
+.eggs
+    &__header
+        font-family: 'bebas'
+        font-size: 48px
+        line-height: 19px
+        text-align: center
+        width: 100%
+        margin-top: 120px
+        letter-spacing: 3.5px
+    &__container
+        width: 100%
+        display: flex
+        justify-content: space-between
+        flex-flow: wrap
+        margin-bottom: 150px
+    &__item
+        min-width: 245px
+        font-family: 'Avenir Next Cyr Medium'
+        font-size: 20px
+        line-height: 30px
+        color: #212f3d
+        text-align: center
+        margin-top: 90px
+        img
+            max-width: 90px
+            max-width: 90px
+            margin-bottom: 30px
+.myphoto
+    width: 687px
+    height: 706px
+    position: absolute
+    bottom: 0
+    left: -124px
+.about
+    &__inner
+        background-color: #f8fbfa
+        height: 673px
+        position: relative
+        padding: 121px 110px 0 590px
+    &__title
+        font-family: 'bebas'
+        font-size: 48px
+        letter-spacing: 3px
+    &__text
+        font-family: 'Avenir Next Cyr Medium'
+        font-size: 20px
+        line-height: 30px
+        margin: 50px 0 75px 0
+    &__btn
+        font-family: 'Avenir Next Cyr Medium' 
+        color: #0eb595 !important
+        background-color: #f8fbfa
+        border: 2px solid #0eb595
+.order
+    margin: 115px 0 100px
+    text-align: center
+    &__title
+        font-family: 'bebas'
+        font-size: 48px
+        line-height: 19px
+        letter-spacing: 3px
+    &__text
+        font-family: 'Avenir Next Cyr Medium'
+        line-height: 30px
+        margin: 45px 0 60px 0
+    &__contacs
+        display: flex
+        justify-content: space-between
+        margin: 0 185px
+    &__input
+        width: 370px
+        height: 65px
+        background-color: #eff4f3
+        border-radius: 8px
+        border: none
+        font-family: 'Avenir Next Cyr Medium'
+        font-size: 16px
+        line-height: 30px
+        padding-left: 27px
+    &__comment
+        font-size: 14px
+        color: #6e837f
+        margin: 30px 0 40px 0
+        &-ref
+            &:link,                
+            &:visited    
+                color: #6e837f !important
+                text-decoration: underline
+.footer
+    background-image: url(../img/footer-fon.jpg)
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: center;
+    min-height: 919px
+    text-align: center
+    padding-top: 140px
+    &__title
+        font-family: 'bebas'
+        font-size: 48px
+        line-height: 19px
+        letter-spacing: 3px
+        color: #fff
+    &__icons
+        margin-top: 80px
+        margin-left: auto
+        margin-right: auto
+        // display: flex
+        // justify-content: space-between
+        // align-items: center
+        li
+            display: inline-block
+            // float: left
+
+            height: 80px
+            width: 80px
+            border: 2px solid #ffffff
+            border-radius: 40px
+            padding: 25px 0 0 0
+        li+li
+            margin-left: 60px            
+
+        &-item
+            &:before
+                font-size: 25px
+    &__copyright
+        display: flex
+        justify-content: space-between
+        &-text
+            font-family: 'Avenir Next Cyr Medium'
+            color: #7a7a7a
+            // display: inline-block
+            padding-top: 500px
+                
+
+
+
+
+
+

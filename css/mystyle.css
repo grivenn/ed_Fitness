@@ -1,0 +1,411 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url("../fonts/AvenirNextCyr-Regular.eot");
+  src: url("../fonts/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Medium';
+  src: url("../fonts/AvenirNextCyr-Medium.eot");
+  src: url("../fonts/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url("../fonts/BebasNeueBold.eot");
+  src: url("../fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?35074668");
+  src: url("../fonts/fontello.eot?35074668#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?35074668") format("woff2"), url("../fonts/fontello.woff?35074668") format("woff"), url("../fonts/fontello.ttf?35074668") format("truetype"), url("../fonts/fontello.svg?35074668#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'fontello';
+        src: url('../font/fontello.svg?35074668#fontello') format('svg');
+    }
+    }
+    */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-twitter:before {
+  content: '\f099';
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d';
+}
+
+/* '' */
+.icon-vkontakte:before {
+  content: '\f189';
+}
+
+/* '' */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 70px;
+  background: #0eb595;
+  padding: 0 60px;
+  display: inline-block;
+  border-radius: 35px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Avenir Next Cyr Regular';
+}
+
+.header {
+  background: #12202f;
+  color: #fff;
+  padding-top: 10px;
+  background-image: url(../img/backgound-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 1080px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.header__top {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-name {
+  float: left;
+  font-size: 26px;
+  line-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 40px;
+  margin-right: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.item-comment {
+  float: left;
+  font-size: 16px;
+}
+
+.header__top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top-right .item-tel {
+  margin-right: 23px;
+}
+
+.item-icons li {
+  float: left;
+  margin-left: 10px;
+}
+
+.icon {
+  color: #fff;
+  font-family: 'fontello';
+  line-height: 30px;
+}
+
+.header__title {
+  font-family: 'bebas';
+  font-size: 106px;
+  line-height: 110px;
+  letter-spacing: 7.5px;
+  margin-top: 220px;
+}
+
+.header__title-comment {
+  font-size: 27px;
+  line-height: 19px;
+  margin-top: 40px;
+}
+
+.header__btn {
+  margin-top: 80px;
+}
+
+.header__gantel {
+  background-image: url(../img/dumbells.png);
+  position: absolute;
+  top: 850px;
+  left: 0;
+  background-repeat: no-repeat;
+  min-height: 677px;
+  width: 390px;
+}
+
+.eggs__header {
+  font-family: 'bebas';
+  font-size: 48px;
+  line-height: 19px;
+  text-align: center;
+  width: 100%;
+  margin-top: 120px;
+  letter-spacing: 3.5px;
+}
+
+.eggs__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-bottom: 150px;
+}
+
+.eggs__item {
+  min-width: 245px;
+  font-family: 'Avenir Next Cyr Medium';
+  font-size: 20px;
+  line-height: 30px;
+  color: #212f3d;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.eggs__item img {
+  max-width: 90px;
+  max-width: 90px;
+  margin-bottom: 30px;
+}
+
+.myphoto {
+  width: 687px;
+  height: 706px;
+  position: absolute;
+  bottom: 0;
+  left: -124px;
+}
+
+.about__inner {
+  background-color: #f8fbfa;
+  height: 673px;
+  position: relative;
+  padding: 121px 110px 0 590px;
+}
+
+.about__title {
+  font-family: 'bebas';
+  font-size: 48px;
+  letter-spacing: 3px;
+}
+
+.about__text {
+  font-family: 'Avenir Next Cyr Medium';
+  font-size: 20px;
+  line-height: 30px;
+  margin: 50px 0 75px 0;
+}
+
+.about__btn {
+  font-family: 'Avenir Next Cyr Medium';
+  color: #0eb595 !important;
+  background-color: #f8fbfa;
+  border: 2px solid #0eb595;
+}
+
+.order {
+  margin: 115px 0 100px;
+  text-align: center;
+}
+
+.order__title {
+  font-family: 'bebas';
+  font-size: 48px;
+  line-height: 19px;
+  letter-spacing: 3px;
+}
+
+.order__text {
+  font-family: 'Avenir Next Cyr Medium';
+  line-height: 30px;
+  margin: 45px 0 60px 0;
+}
+
+.order__contacs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 185px;
+}
+
+.order__input {
+  width: 370px;
+  height: 65px;
+  background-color: #eff4f3;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Avenir Next Cyr Medium';
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 27px;
+}
+
+.order__comment {
+  font-size: 14px;
+  color: #6e837f;
+  margin: 30px 0 40px 0;
+}
+
+.order__comment-ref:link, .order__comment-ref:visited {
+  color: #6e837f !important;
+  text-decoration: underline;
+}
+
+.footer {
+  background-image: url(../img/footer-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 919px;
+  text-align: center;
+  padding-top: 140px;
+}
+
+.footer__title {
+  font-family: 'bebas';
+  font-size: 48px;
+  line-height: 19px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.footer__icons {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__icons li {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  padding: 25px 0 0 0;
+}
+
+.footer__icons li + li {
+  margin-left: 60px;
+}
+
+.footer__icons-item:before {
+  font-size: 25px;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__copyright-text {
+  font-family: 'Avenir Next Cyr Medium';
+  color: #7a7a7a;
+  padding-top: 500px;
+}
+/*# sourceMappingURL=mystyle.css.map */
